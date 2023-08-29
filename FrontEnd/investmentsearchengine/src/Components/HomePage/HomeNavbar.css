@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+.navbody,.homeNavbar,.user{
+    padding:0;
+    margin:0;
+    box-sizing:boder-box;
+    font-family: Inter;
+    text-decoration:none;
+    list-style:none;
+}
+
+:root{
+    --bg-color: #fff;
+    --text-color:#A4A4A4;
+    --main-color: #0078FF;
+}
+
+body{
+    min-height:100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.navHeader{
+    position:fixed;
+    width:100%;
+    height: 10%;
+    top:0;
+    right:0;  
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    padding:28% 0%;
+    transition:all .50s ease;
+    background-color:white;
+    border-bottom: 1px solid #E9E9E9;
+    
+   
+}
+
+.navLogo{
+    display:flex;
+    align-items:center;
+    width: 140px;
+    height: 45px;
+    margin-left: 40%;
+
+
+}
+.homeNavbar li a {
+    text-decoration: none;
+  }
+
+.homeNavbar{
+    display:flex;
+    
+}
+
+.homeNavbar a{
+   color: var(--text-color);
+   font-size:1rem;
+   font-weight: 800px;;
+   padding:5px 0;
+   margin:0px 30px;
+   transition: all .50s ease; 
+   text-decoration: none;
+}
+
+
+.homeNavbar a:hover{
+    color: var(--main-color);
+
+}
+.homeNavbar a.active{
+    color: var(--main-color);
+    
+}
+
+.discover-dropdown {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+  }
+  
+  .discover-dropdown li {
+    margin-bottom: 8px;
+    list-style: none;
+    
+  }
+  
+  .discover-dropdown a {
+    color: #333;
+    text-align: center; 
+    display:block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discover-dropdown p {
+    margin: 0;
+    color: #888;
+    font-size: 12px;
+    text-align:center;
+    display:block;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .cal :hover {
+    background-color: black;
+    color: #fff; 
+  }
+
+
+.main{
+    display:flex;
+    align-items:center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left:10px;
+    color: var(--text-color);
+    font-size:1.1rem;
+    font-weight:500;
+    transition: all .50s ease;
+}
+.user{
+    display:flex;
+    align-items:center;
+    color: var(--text-color);
+    font-family: 'Manrope', sans-serif!;
+    
+}
+/* .user i{
+    color:#0078FF;
+    font-size: 25px;
+    margin-right:7px;
+    
+} */
+
+.userSignButton{
+    /* color:#0078FF;
+    font-size: 25px;
+    margin-right:7px; */
+    height:auto;
+    width:100px;
+    margin-right:70px;
+}
+
+.main a:hover{
+    color: var(--text-color);
+}
+#menu-icon{
+
+    font-size:35px;
+    color: var(--text-color);
+    cursor:pointer;
+    z-index:10001;
+    display:none;
+}
+
+@media (max-width: 1280px){
+    .navHeader{
+        padding: 14px 0%;
+        transition: .2s;
+    }
+    .homeNavbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display:block;
+    }
+    .homeNavbar{
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        width:270px;
+        height: 20vh;
+        background: var(--main-color);
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        border-radius:10px;
+        transition: all .50s ease;
+    }
+    .homeNavbar a{
+        display:block;
+        margin:12px 0;
+        padding:0px 25px;
+        transition: all .50s ease;
+    }
+    .homeNavbar a:hover{
+        color: black;
+        transform: translateY(5px);
+    }
+    .homeNavbar a.active{
+        color: white;
+    }
+    .homeNavbar.open{
+        right:2%;
+    }
+   
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .homeNavbar {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .homeNavbar.open {
+    display: flex;
+  }
+
+  .homeNavbar li {
+    margin: 10px 0;
+  }
+
+  .bx-menu,
+  .bx-x {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .bx-menu::before {
+    content: "\f0c9";
+  }
+
+  .bx-x::before {
+    content: "\f00d";
+  }
+
+  .userSignButton {
+    display: none;
+  }
+}

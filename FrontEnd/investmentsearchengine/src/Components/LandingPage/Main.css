@@ -1,0 +1,204 @@
+.LandingPageContainer {
+  width: 100%;
+}
+
+.LandingPageheaders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 252, 252);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.LandingPagelogos {
+  margin-left: 20px;
+  width: 150px;
+}
+
+.LandingPagebuttons {
+  margin-right: 20px;
+  width: 72px;
+  display: flex;
+  background: white;
+  border-color: #0078FF;
+  color: #0078FF;
+  border: 1px solid #0078FF;
+  border-radius: 50px;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pics {
+  width: 10px;
+  height: 12px;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+.LandingPageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans:ital,wght@1,700&family=Rozha+One&display=swap');
+
+.LandingPagemainText {
+  margin-top: 143px;
+  font-size: 55px;
+  display: flex;
+  font-family: 'Rozha One', serif;
+  justify-content: center;
+  padding: 2px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0%;
+}
+
+
+.LandingPagesubText {
+  display: flex;
+  padding-left: 70px;
+  line-height: 200%;
+  padding-right: 70px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  justify-content: center;
+  font-size: 21px; 
+}
+
+.LandingPagewrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+  border-radius: 25px;
+  padding: 4px 8px;
+  
+  position: relative;
+  height: 40px;
+  background-color: white;
+  margin-top: 50px;
+  border: none;
+  box-shadow: 0px 0px 53px 2px rgba(65, 73, 178, 0.2);
+
+} 
+
+.LandingPageicon {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 5px;
+  min-width: 35px;
+  
+  border-radius: 50%;
+  background-color: #0078FF;
+
+
+}
+.LandingsearchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  background-color: blue;
+ 
+}
+.LandingPageinput {
+  border: none;
+  outline: none;
+  padding-left: 12px;
+  font-size: 16px;
+  width: 100%;
+  font-family: 'Inter'; 
+
+  @media (min-width: 592px) {
+    width: 70%;
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 90%;
+  }
+}
+
+
+.LandingPagelogo {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  color: #0078FF;
+}
+
+
+
+.LandingPageDisplay {
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.LandingPagesearchResults
+{
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+ 
+  background-color: #fff;
+
+  border-top: none;
+  z-index: 1;
+ border-radius: 12px;
+}
+.LandingPagesearchResults p {
+  margin-left: 20px;
+}
+
+
+@media (max-width: 386px){
+  .Display {
+      height: 100%;
+  }
+}
+
+
+
+.searchresultsCompanyNameNSE {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd; 
+
+
+}
+
+.LandingPageCompanyName {
+  font-family: 'Inter';
+  font-weight:400;
+  margin: 0;
+}
+
+.landingPageNSE {
+  font-size: 15px;
+  font-family: 'Inter';
+  margin-right:2%;
+  color: #666;
+  background-color: rgba(0, 120, 255, 1);
+  color: white;
+  padding: 4px 6px;
+ border-radius: px;
+}

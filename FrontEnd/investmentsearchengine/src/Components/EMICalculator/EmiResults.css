@@ -1,0 +1,16 @@
+.emiresults{
+    display: flex;
+    background-color: aliceblue;
+    margin-left: 1%;
+    margin-top: 4%;
+    border-radius: 5%;
+    flex-direction: row;
+    width: 100%;
+
+}
+.emivalues{
+
+    margin-left: 2%;
+}
+.emipiechart{
+}

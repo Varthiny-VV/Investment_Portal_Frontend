@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+#Reglogo {
+    height: 9%;
+    width: 58%;
+    left: 25%;
+    top: 5%;
+  }
+
+#signUp {
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   color: black;
+   font-size: 120%;
+   line-height: 39px;
+   margin-top: 10%;
+   position: absolute;
+}
+
+#RegCont {
+    
+    margin-top: 25%;
+    height: 25%;
+    top: 60%;
+    font-family: 'Inter', sans-serif;
+    font-size: 70%;
+    color: #4F5B67;
+  }
+
+.Reg-input{
+    height: 32px;
+    width: 130%;
+    box-sizing: border-box;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border: 1px solid #717D8A;
+    border-radius: 6px;
+  }
+
+  #Reg-sub-btn{
+    position: absolute;
+    background-color: #0078FF;
+    color: white;
+    border: #0078FF;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 8%;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 6%;
+    width: 130%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  #Reg-sub-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+
+.Reg-labels{
+    font-family: 'Inter', sans-serif;
+    color:#4F5B67;
+    font-size:70%;
+}
+
+#Reg-formsec {
+    position: absolute;
+    left: 68%;
+    top: 10%;
+  }
+
+#alreadyUser{
+    position: absolute;
+    margin-top: 15%;
+    margin-bottom: auto;
+    font-family: 'Inter', sans-serif;
+    font-size:small;
+    color: #4F5B67;
+    left:40%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+
+.Reg-img-fluid {
+    position: absolute;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  #sideGreen {
+    top: 0%;
+    left: 40%;
+    width: 20%;
+    height: 59.8%;
+    opacity: 2;
+  }
+  
+  #bgGradient {
+    width: 60%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+  }
+  
+  #rSideBlue {
+    top: 18.6%;
+    left: 40%;
+    width: 20%;
+    height: 38.7%;
+  }
+  
+  #lSideBlue {
+    bottom: 0%;
+    left: 0%;
+    height: 37%;
+    width: 19%;
+    opacity: 0.5;
+  }
+  
+  #rCircle {
+    left: 53.4%;
+    height: 12.8%;
+    width: 6.7%;
+    top: 18.8%;
+  }
+  
+  #lCircle {
+    bottom: 0%;
+    left: 0%;
+    height: 8.5%;
+    width: 4.7%;
+    opacity: 0.3;
+  }
+  
+  .Reg-dot {
+    position: absolute;
+    height: 5.5%;
+    width: 2.7%;
+    left: 8%;
+    top: 36%;
+    background-color: #1589CC;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  #Reg-header {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    position: absolute;
+    color: black;
+    font-size: 2.5em;
+    left: 8%;
+    top: 40%;
+  }
+  
+  #Reg-subHeader {
+    font-family: 'Manrope', sans-serif;
+    position: absolute;
+    color: #4F5B67;
+    font-weight: 500;
+    font-size: 22px;
+    top: 54.5%;
+    left: 8%;
+  }
+  
+  #quotation {
+    padding: 2px;
+    height: 3.2%;
+    width: 1.8%;
+    left: 8.4%;
+    top: 37.2%;
+  }
+  
+  ::placeholder {
+    color: #282828;
+  }
+  
+  @media screen and (max-device-width : 760px){
+    .RegPage-container{
+      display: flex;
+      flex-direction: column;
+    } 
+    #Reg-design{
+      display: none;
+    }   
+    #Reg-formsec{
+      position: absolute;
+      left:5%;
+      top:16%;
+    
+    }
+    #Reg-sub-btn{
+      width: 100;
+      height: 7%;
+      border-radius: 2px;
+    
+    }
+    #Reglogo {
+      left:2%;
+    }
+    #ResponsiveDesignImg{
+      left:60%;
+      position: absolute;
+    }
+    #ResponsiveDownImg{
+      left:0%;
+      position: absolute;
+      bottom:0%;
+    }
+  }
+
+  @media (min-device-width:761px) and (max-device-width:1000px){
+    .RegPage-container{
+      display: flex;
+      flex-direction: column;
+    } 
+    #Reg-design{
+      display: none;
+    }
+    #Reg-formsec{
+      position: absolute;
+      left:12%;
+      top:16%;
+      font-size: 30px;
+    }
+    #Reglogo{
+      position: absolute;
+      left:2%;
+    }
+    .Reg-input{
+      height:60px;
+      font-size: large;
+    }
+    #alreadyUser{
+      font-size: 20px;
+    }
+    ::placeholder{
+      font-size: large;
+    }
+    #Reg-sub-btn{
+      font-size: large;
+    }
+    #responsiveDesign{
+      left:65%;      
+      height:auto;
+      position: absolute;
+    }   
+   #ResponsiveDesignImg{
+    position: absolute;
+    height: 450px;
+   }
+  }
+
+  @media  (min-device-width:1000px) and (max-device-width:1025px){
+    .RegPage-container{
+      display: flex;
+      flex-direction: column;
+    } 
+    #Reg-design{
+      height: 100vh;
+    }
+    #Reg-formsec{
+      position: absolute;
+      left: 64%;
+      top: 0%;
+      font-size: small;
+    }
+    .Reg-input{
+      height:25px;
+      font-size: small;
+    }
+    #alreadyUser{
+      font-size: 11px;
+    }
+    #Reg-header{
+      font-size: 30px;
+    }
+    #Reg-subheader{
+      font-size: 10px;
+    }
+  }
